@@ -1,10 +1,12 @@
 # Redes_comparacion_forense_voz
-1. Descripción General
+##1. Descripción General
+
 El  repositorio contiene la implementación de un sistema de verificación de locutor, diseñado para comparar pares de grabaciones de audio y determinar matemáticamente la probabilidad de que pertenezcan a la misma persona. El proyecto incluye múltiples iteraciones experimentales.
 
 El código procesa la señal de audio, extrae vectores representativos (embeddings) y ejecuta comparaciones geométricas y estadísticas (Similitud Coseno, Likelihood Ratio) contra bases de datos referenciales.
 
-2. Archivos Principales
+##2. Archivos Principales
+
 El repositorio se divide en módulos de extracción, entrenamiento y evaluación:
 
 Extracción y Modelado Clásico
@@ -30,7 +32,7 @@ Análisis Estadístico
 resultados.py: Secuencia de comandos automatizada para consolidar múltiples documentos de salida (.xlsx). Mide el desempeño global (Exactitud, Precisión, Sensibilidad, F1-Score), calcula el umbral óptimo (EER) y genera un reporte técnico en texto plano junto con matrices de confusión y gráficos de distribución. 
 
 
-
+##3. Instalación de Dependencias
 
 Se recomienda aislar el entorno de trabajo:
 
@@ -40,7 +42,9 @@ Instale los paquetes especificados:
 
 Bash
 pip install -r requirements.txt
-4. Configuración de Rutas de Trabajo
+
+##4. Configuración de Rutas de Trabajo
+
 Antes de ejecutar los archivos de inferencia (app_nn1.py, app_nn_v2.py o app_nn_v3.py), es obligatorio abrir el código fuente y modificar los valores globales que apuntan a sus carpetas locales:
 
 
@@ -55,7 +59,8 @@ AUDIO_REF_PATH: Directorio que contiene la población general para el cálculo d
 OUTPUT_DIR: Directorio destino de los documentos Excel.
 
 
-5. Glosario de Salidas en Excel
+##5. Glosario de Salidas en Excel
+
 Los scripts exportan los siguientes datos matemáticos para evaluación forense:
 
 
