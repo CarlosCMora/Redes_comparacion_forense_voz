@@ -36,13 +36,14 @@ resultados.py: Secuencia de comandos automatizada para consolidar múltiples doc
 
 Se recomienda aislar el entorno de trabajo:
 
-Bash
+```bash
 python -m venv venv
+```
 Instale los paquetes especificados:
 
-Bash
+```bash
 pip install -r requirements.txt
-
+```
 ## 4. Configuración de Rutas de Trabajo
 
 Antes de ejecutar los archivos de inferencia (app_nn1.py, app_nn_v2.py o app_nn_v3.py), es obligatorio abrir el código fuente y modificar los valores globales que apuntan a sus carpetas locales:
